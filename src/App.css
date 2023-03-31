@@ -1,38 +1,151 @@
-.App {
+
+* {
+  box-sizing: border-box;
+}
+
+.main-frame {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  margin: 15px;
+  background: #33CCCC;
+  border: 10px solid blue;
+}
+
+.title {
+  margin: 66px 0 40px 85px;
+  font-size: 21px;
+  color: #FFFFFF;
+}
+
+.weather-table {
+  margin: 0 auto;
+  max-width: 1166px;
+  width: 100%;
+}
+
+ul {
+  width: 1000px;
+  margin: 0 auto;
+  font-size: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul li {
+  font-size: 22px;
+  padding: 26px 0;
+  text-align: center;
+  color: #FFFFFF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+li p {
+  margin-bottom: 10px;
+}
+
+.first-row {
+  font-size: 0;
+  border: 2px solid #FFFFFF;
+}
+
+.first-row li {
+  display: inline-block;
+
+  border: 2px solid #FFFFFF;
+}
+.lisbon {
+  width: 50%;
+  background: #3399CC;
+  border: 2px solid #FFFFFF;
+}
+
+.paris {
+  width: 25%;
+  background: #33CCCC;
+  border: 2px solid #FFFFFF;
+}
+.belgrade {
+  width: 25%;
+  background: #996699;
+  border: 2px solid #FFFFFF;
+}
+
+
+.venice{
+  width: 25%;
+  background: #C24747;
+  border: 2px solid #FFFFFF;
+}
+
+.tel-avive {
+  width: 25%;
+  background: #E2674A;
+  border: 2px solid #FFFFFF;
+}
+.cair {
+  width: 25%;
+  background: #FFCC66;
+  border: 2px solid #FFFFFF;
+}
+
+.new-york {
+  width: 25%;
+  background: #99CC99;
+  border: 2px solid #FFFFFF;
+}
+
+.new-delhi {
+  width: 50%;
+  background: #669999;
+  border: 2px solid #FFFFFF;
+}
+
+.san-francisco {
+  width: 25%;
+  background: #CC6699;
+  border: 2px solid #FFFFFF;
+}
+
+.tokyo {
+  width: 25%;
+  background: #339966;
+  border: 2px solid #FFFFFF;
+}
+
+.sydney {
+  width: 100%;
+  background: #666699;
+  border: 2px solid #FFFFFF;
+}
+
+.footer {
+  margin: 37px 0 119px 85px;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+
+keyframes hide-ul{
+  from{
+     opacity: 0.2;
+  }
+  to{
+     opacity: 1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+li:hover{
+  animation-name: hide-ul;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 }
 
-.App-link {
-  color: #61dafb;
+ul:hover li {
+opacity: 0.6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul:hover li:hover {
+  opacity: 1;
 }
+
+
+
